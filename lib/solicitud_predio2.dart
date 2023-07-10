@@ -1,8 +1,11 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import './solicitud_predio1.dart';
 import 'package:adobe_xd/page_link.dart';
 import './pregunta_solicitud.dart';
+// ignore: depend_on_referenced_packages
 import 'package:flutter_svg/flutter_svg.dart';
 
 class SolicitudPredio2 extends StatelessWidget {
@@ -160,300 +163,334 @@ class SolicitudPredio2 extends StatelessWidget {
           ),
           Pinned.fromPins(
             Pin(start: 51.0, end: 51.0),
-            Pin(size: 525.0, middle: 0.5012),
+            Pin(size: 574.0, start: 98.0),
             child: Stack(
               children: <Widget>[
-                Pinned.fromPins(
-                  Pin(start: 1.0, end: 0.0),
-                  Pin(size: 62.0, start: 0.0),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(0.0, 49.0, 0.0, 0.0),
                   child: Stack(
                     children: <Widget>[
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(0.0, 12.0, 0.0, 0.0),
-                        child:
-                            // Adobe XD layer: 'Input' (group)
-                            Stack(
+                      Pinned.fromPins(
+                        Pin(start: 1.0, end: 0.0),
+                        Pin(size: 62.0, start: 0.0),
+                        child: Stack(
                           children: <Widget>[
-                            // Adobe XD layer: 'Rectangle 107' (shape)
-                            Container(
-                              decoration: BoxDecoration(
-                                color: const Color(0xffffffff),
-                                border: Border.all(
-                                    width: 1.0, color: const Color(0xffbce0fd)),
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 165.0, start: 16.0),
-                              Pin(size: 16.0, middle: 0.5),
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(
+                                  0.0, 12.0, 0.0, 0.0),
                               child:
-                                  // Adobe XD layer: 'John Doe' (text)
-                                  const Text(
-                                'Área en metros cuadrados',
-                                style: TextStyle(
-                                  fontFamily: 'Arial',
-                                  fontSize: 14,
-                                  color: Color(0xff2699fb),
+                                  // Adobe XD layer: 'Input' (group)
+                                  Stack(
+                                children: <Widget>[
+                                  // Adobe XD layer: 'Rectangle 107' (shape)
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xffffffff),
+                                      border: Border.all(
+                                          width: 1.0,
+                                          color: const Color(0xff014284)),
+                                    ),
+                                  ),
+                                  Pinned.fromPins(
+                                    Pin(size: 141.0, start: 16.0),
+                                    Pin(size: 14.0, middle: 0.5278),
+                                    child:
+                                        // Adobe XD layer: 'John Doe' (text)
+                                        const Text(
+                                      'Área en metros cuadrados',
+                                      style: TextStyle(
+                                        fontFamily: 'Arial',
+                                        fontSize: 12,
+                                        color: Color(0xffbce0fd),
+                                      ),
+                                      softWrap: false,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const Align(
+                              alignment: Alignment.topLeft,
+                              child: SizedBox(
+                                width: 118.0,
+                                height: 11.0,
+                                child:
+                                    // Adobe XD layer: 'Full Name' (text)
+                                    Text(
+                                  'Área en metros cuadrados',
+                                  style: TextStyle(
+                                    fontFamily: 'Arial',
+                                    fontSize: 10,
+                                    color: Color(0xff014284),
+                                  ),
+                                  softWrap: false,
                                 ),
-                                softWrap: false,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      const Align(
-                        alignment: Alignment.topLeft,
-                        child: SizedBox(
-                          width: 118.0,
-                          height: 11.0,
-                          child:
-                              // Adobe XD layer: 'Full Name' (text)
-                              Text(
-                            'Área en metros cuadrados',
-                            style: TextStyle(
-                              fontFamily: 'Arial',
-                              fontSize: 10,
-                              color: Color(0xff2699fb),
-                            ),
-                            softWrap: false,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(start: 1.0, end: 0.0),
-                  Pin(size: 63.0, middle: 0.197),
-                  child: Stack(
-                    children: <Widget>[
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(0.0, 13.0, 0.0, 0.0),
-                        child:
-                            // Adobe XD layer: 'Input' (group)
-                            Stack(
-                          children: <Widget>[
-                            // Adobe XD layer: 'Rectangle 107' (shape)
-                            Container(
-                              decoration: BoxDecoration(
-                                color: const Color(0xffffffff),
-                                border: Border.all(
-                                    width: 1.0, color: const Color(0xffbce0fd)),
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 116.0, start: 16.0),
-                              Pin(size: 16.0, middle: 0.5),
-                              child:
-                                  // Adobe XD layer: 'johndoe@mail.com' (text)
-                                  const Text(
-                                'Cantidad de casas',
-                                style: TextStyle(
-                                  fontFamily: 'Arial',
-                                  fontSize: 14,
-                                  color: Color(0xff2699fb),
-                                ),
-                                softWrap: false,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      const Align(
-                        alignment: Alignment.topLeft,
-                        child: SizedBox(
-                          width: 83.0,
-                          height: 11.0,
-                          child:
-                              // Adobe XD layer: 'Full Name' (text)
-                              Text(
-                            'Cantidad de casas',
-                            style: TextStyle(
-                              fontFamily: 'Arial',
-                              fontSize: 10,
-                              color: Color(0xff2699fb),
-                            ),
-                            softWrap: false,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(start: 1.0, end: 0.0),
-                  Pin(size: 62.0, middle: 0.3974),
-                  child: Stack(
-                    children: <Widget>[
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(0.0, 12.0, 0.0, 0.0),
-                        child:
-                            // Adobe XD layer: 'Input' (group)
-                            Stack(
-                          children: <Widget>[
-                            // Adobe XD layer: 'Rectangle 107' (shape)
-                            Container(
-                              decoration: BoxDecoration(
-                                color: const Color(0xffffffff),
-                                border: Border.all(
-                                    width: 1.0, color: const Color(0xffbce0fd)),
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 175.0, start: 16.0),
-                              Pin(size: 16.0, middle: 0.5),
-                              child:
-                                  // Adobe XD layer: '09/09/1987' (text)
-                                  const Text(
-                                'Cantidad de áreas comunes',
-                                style: TextStyle(
-                                  fontFamily: 'Arial',
-                                  fontSize: 14,
-                                  color: Color(0xff2699fb),
-                                ),
-                                softWrap: false,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      const Align(
-                        alignment: Alignment.topLeft,
-                        child: SizedBox(
-                          width: 125.0,
-                          height: 11.0,
-                          child:
-                              // Adobe XD layer: 'Full Name' (text)
-                              Text(
-                            'Cantidad de áreas comunes',
-                            style: TextStyle(
-                              fontFamily: 'Arial',
-                              fontSize: 10,
-                              color: Color(0xff2699fb),
-                            ),
-                            softWrap: false,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(start: 1.0, end: 0.0),
-                  Pin(size: 61.0, middle: 0.597),
-                  child: Stack(
-                    children: <Widget>[
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(0.0, 11.0, 0.0, 0.0),
-                        child:
-                            // Adobe XD layer: 'Input' (group)
-                            Stack(
-                          children: <Widget>[
-                            // Adobe XD layer: 'Rectangle 107' (shape)
-                            Container(
-                              decoration: BoxDecoration(
-                                color: const Color(0xffffffff),
-                                border: Border.all(
-                                    width: 1.0, color: const Color(0xffbce0fd)),
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 233.0, start: 16.0),
-                              Pin(size: 16.0, middle: 0.5),
-                              child:
-                                  // Adobe XD layer: '497 Evergreen Rd. R…' (text)
-                                  const Text(
-                                'Áreas comunes en metros cuadrados',
-                                style: TextStyle(
-                                  fontFamily: 'Arial',
-                                  fontSize: 14,
-                                  color: Color(0xff2699fb),
-                                ),
-                                softWrap: false,
                               ),
                             ),
                           ],
                         ),
                       ),
                       Pinned.fromPins(
-                        Pin(size: 166.0, start: 1.0),
-                        Pin(size: 11.0, start: 0.0),
-                        child:
-                            // Adobe XD layer: 'Full Name' (text)
-                            const Text(
-                          'Áreas comunes en metros cuadrados',
-                          style: TextStyle(
-                            fontFamily: 'Arial',
-                            fontSize: 10,
-                            color: Color(0xff2699fb),
-                          ),
-                          softWrap: false,
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(0.0, 11.0, 0.0, 0.0),
-                        child:
-                            // Adobe XD layer: 'Input' (group)
-                            Stack(
+                        Pin(start: 1.0, end: 0.0),
+                        Pin(size: 63.0, middle: 0.197),
+                        child: Stack(
                           children: <Widget>[
-                            // Adobe XD layer: 'Rectangle 107' (shape)
-                            Container(
-                              decoration: BoxDecoration(
-                                color: const Color(0xffffffff),
-                                border: Border.all(
-                                    width: 1.0, color: const Color(0xffbce0fd)),
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(
+                                  0.0, 13.0, 0.0, 0.0),
+                              child:
+                                  // Adobe XD layer: 'Input' (group)
+                                  Stack(
+                                children: <Widget>[
+                                  // Adobe XD layer: 'Rectangle 107' (shape)
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xffffffff),
+                                      border: Border.all(
+                                          width: 1.0,
+                                          color: const Color(0xff014284)),
+                                    ),
+                                  ),
+                                  Pinned.fromPins(
+                                    Pin(size: 99.0, start: 16.0),
+                                    Pin(size: 14.0, middle: 0.5278),
+                                    child:
+                                        // Adobe XD layer: 'johndoe@mail.com' (text)
+                                        const Text(
+                                      'Cantidad de casas',
+                                      style: TextStyle(
+                                        fontFamily: 'Arial',
+                                        fontSize: 12,
+                                        color: Color(0xffbce0fd),
+                                      ),
+                                      softWrap: false,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
-                            Pinned.fromPins(
-                              Pin(size: 233.0, start: 16.0),
-                              Pin(size: 16.0, middle: 0.5),
-                              child:
-                                  // Adobe XD layer: '497 Evergreen Rd. R…' (text)
-                                  const Text(
-                                'Áreas comunes en metros cuadrados',
-                                style: TextStyle(
-                                  fontFamily: 'Arial',
-                                  fontSize: 14,
-                                  color: Color(0xff2699fb),
+                            const Align(
+                              alignment: Alignment.topLeft,
+                              child: SizedBox(
+                                width: 83.0,
+                                height: 11.0,
+                                child:
+                                    // Adobe XD layer: 'Full Name' (text)
+                                    Text(
+                                  'Cantidad de casas',
+                                  style: TextStyle(
+                                    fontFamily: 'Arial',
+                                    fontSize: 10,
+                                    color: Color(0xff014284),
+                                  ),
+                                  softWrap: false,
                                 ),
-                                softWrap: false,
                               ),
                             ),
                           ],
                         ),
                       ),
-                    ],
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(start: 0.0, end: 1.0),
-                  Pin(size: 64.0, middle: 0.8004),
-                  child: Stack(
-                    children: <Widget>[
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(0.0, 14.0, 0.0, 0.0),
-                        child:
-                            // Adobe XD layer: 'Input' (group)
-                            Stack(
+                      Pinned.fromPins(
+                        Pin(start: 1.0, end: 0.0),
+                        Pin(size: 62.0, middle: 0.3974),
+                        child: Stack(
                           children: <Widget>[
-                            // Adobe XD layer: 'Rectangle 107' (shape)
-                            Container(
-                              decoration: BoxDecoration(
-                                color: const Color(0xffffffff),
-                                border: Border.all(
-                                    width: 1.0, color: const Color(0xffbce0fd)),
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(
+                                  0.0, 12.0, 0.0, 0.0),
+                              child:
+                                  // Adobe XD layer: 'Input' (group)
+                                  Stack(
+                                children: <Widget>[
+                                  // Adobe XD layer: 'Rectangle 107' (shape)
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xffffffff),
+                                      border: Border.all(
+                                          width: 1.0,
+                                          color: const Color(0xff014284)),
+                                    ),
+                                  ),
+                                  Pinned.fromPins(
+                                    Pin(size: 150.0, start: 16.0),
+                                    Pin(size: 14.0, middle: 0.5278),
+                                    child:
+                                        // Adobe XD layer: '09/09/1987' (text)
+                                        const Text(
+                                      'Cantidad de áreas comunes',
+                                      style: TextStyle(
+                                        fontFamily: 'Arial',
+                                        fontSize: 12,
+                                        color: Color(0xffbce0fd),
+                                      ),
+                                      softWrap: false,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const Align(
+                              alignment: Alignment.topLeft,
+                              child: SizedBox(
+                                width: 125.0,
+                                height: 11.0,
+                                child:
+                                    // Adobe XD layer: 'Full Name' (text)
+                                    Text(
+                                  'Cantidad de áreas comunes',
+                                  style: TextStyle(
+                                    fontFamily: 'Arial',
+                                    fontSize: 10,
+                                    color: Color(0xff014284),
+                                  ),
+                                  softWrap: false,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(start: 1.0, end: 0.0),
+                        Pin(size: 61.0, middle: 0.597),
+                        child: Stack(
+                          children: <Widget>[
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(
+                                  0.0, 11.0, 0.0, 0.0),
+                              child:
+                                  // Adobe XD layer: 'Input' (group)
+                                  Stack(
+                                children: <Widget>[
+                                  // Adobe XD layer: 'Rectangle 107' (shape)
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xffffffff),
+                                      border: Border.all(
+                                          width: 1.0,
+                                          color: const Color(0xff014284)),
+                                    ),
+                                  ),
+                                  Pinned.fromPins(
+                                    Pin(size: 233.0, start: 16.0),
+                                    Pin(size: 16.0, middle: 0.5),
+                                    child:
+                                        // Adobe XD layer: '497 Evergreen Rd. R…' (text)
+                                        const Text(
+                                      'Áreas comunes en metros cuadrados',
+                                      style: TextStyle(
+                                        fontFamily: 'Arial',
+                                        fontSize: 14,
+                                        color: Color(0xff2699fb),
+                                      ),
+                                      softWrap: false,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                             Pinned.fromPins(
-                              Pin(size: 138.0, start: 16.0),
-                              Pin(size: 16.0, middle: 0.5),
+                              Pin(size: 166.0, start: 1.0),
+                              Pin(size: 11.0, start: 0.0),
                               child:
-                                  // Adobe XD layer: '497 Evergreen Rd. R…' (text)
+                                  // Adobe XD layer: 'Full Name' (text)
+                                  const Text(
+                                'Áreas comunes en metros cuadrados',
+                                style: TextStyle(
+                                  fontFamily: 'Arial',
+                                  fontSize: 10,
+                                  color: Color(0xff014284),
+                                ),
+                                softWrap: false,
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(
+                                  0.0, 11.0, 0.0, 0.0),
+                              child:
+                                  // Adobe XD layer: 'Input' (group)
+                                  Stack(
+                                children: <Widget>[
+                                  // Adobe XD layer: 'Rectangle 107' (shape)
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xffffffff),
+                                      border: Border.all(
+                                          width: 1.0,
+                                          color: const Color(0xff014284)),
+                                    ),
+                                  ),
+                                  Pinned.fromPins(
+                                    Pin(size: 199.0, start: 16.0),
+                                    Pin(size: 14.0, middle: 0.5278),
+                                    child:
+                                        // Adobe XD layer: '497 Evergreen Rd. R…' (text)
+                                        const Text(
+                                      'Áreas comunes en metros cuadrados',
+                                      style: TextStyle(
+                                        fontFamily: 'Arial',
+                                        fontSize: 12,
+                                        color: Color(0xffbce0fd),
+                                      ),
+                                      softWrap: false,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(start: 0.0, end: 1.0),
+                        Pin(size: 64.0, middle: 0.8004),
+                        child: Stack(
+                          children: <Widget>[
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(
+                                  0.0, 14.0, 0.0, 0.0),
+                              child:
+                                  // Adobe XD layer: 'Input' (group)
+                                  Stack(
+                                children: <Widget>[
+                                  // Adobe XD layer: 'Rectangle 107' (shape)
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xffffffff),
+                                      border: Border.all(
+                                          width: 1.0,
+                                          color: const Color(0xff014284)),
+                                    ),
+                                  ),
+                                  Pinned.fromPins(
+                                    Pin(size: 118.0, start: 16.0),
+                                    Pin(size: 14.0, middle: 0.5278),
+                                    child:
+                                        // Adobe XD layer: '497 Evergreen Rd. R…' (text)
+                                        const Text(
+                                      'Cantidad de vigilantes',
+                                      style: TextStyle(
+                                        fontFamily: 'Arial',
+                                        fontSize: 12,
+                                        color: Color(0xffbce0fd),
+                                      ),
+                                      softWrap: false,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Pinned.fromPins(
+                              Pin(size: 98.0, start: 1.0),
+                              Pin(size: 11.0, start: 0.0),
+                              child:
+                                  // Adobe XD layer: 'Full Name' (text)
                                   const Text(
                                 'Cantidad de vigilantes',
                                 style: TextStyle(
                                   fontFamily: 'Arial',
-                                  fontSize: 14,
-                                  color: Color(0xff2699fb),
+                                  fontSize: 10,
+                                  color: Color(0xff014284),
                                 ),
                                 softWrap: false,
                               ),
@@ -462,70 +499,57 @@ class SolicitudPredio2 extends StatelessWidget {
                         ),
                       ),
                       Pinned.fromPins(
-                        Pin(size: 98.0, start: 1.0),
-                        Pin(size: 11.0, start: 0.0),
-                        child:
-                            // Adobe XD layer: 'Full Name' (text)
-                            const Text(
-                          'Cantidad de vigilantes',
-                          style: TextStyle(
-                            fontFamily: 'Arial',
-                            fontSize: 10,
-                            color: Color(0xff2699fb),
-                          ),
-                          softWrap: false,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(start: 0.0, end: 1.0),
-                  Pin(size: 61.0, end: 0.0),
-                  child: Stack(
-                    children: <Widget>[
-                      Pinned.fromPins(
-                        Pin(size: 148.0, start: 2.0),
-                        Pin(size: 11.0, start: 0.0),
-                        child:
-                            // Adobe XD layer: 'Full Name' (text)
-                            const Text(
-                          'Cantidad de personal de limpieza',
-                          style: TextStyle(
-                            fontFamily: 'Arial',
-                            fontSize: 10,
-                            color: Color(0xff2699fb),
-                          ),
-                          softWrap: false,
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(0.0, 11.0, 0.0, 0.0),
-                        child:
-                            // Adobe XD layer: 'Input' (group)
-                            Stack(
+                        Pin(start: 0.0, end: 1.0),
+                        Pin(size: 61.0, end: 0.0),
+                        child: Stack(
                           children: <Widget>[
-                            // Adobe XD layer: 'Rectangle 107' (shape)
-                            Container(
-                              decoration: BoxDecoration(
-                                color: const Color(0xffffffff),
-                                border: Border.all(
-                                    width: 1.0, color: const Color(0xffbce0fd)),
-                              ),
-                            ),
                             Pinned.fromPins(
-                              Pin(size: 208.0, start: 16.0),
-                              Pin(size: 16.0, middle: 0.5),
+                              Pin(size: 148.0, start: 2.0),
+                              Pin(size: 11.0, start: 0.0),
                               child:
-                                  // Adobe XD layer: '497 Evergreen Rd. R…' (text)
+                                  // Adobe XD layer: 'Full Name' (text)
                                   const Text(
                                 'Cantidad de personal de limpieza',
                                 style: TextStyle(
                                   fontFamily: 'Arial',
-                                  fontSize: 14,
-                                  color: Color(0xff2699fb),
+                                  fontSize: 10,
+                                  color: Color(0xff014284),
                                 ),
                                 softWrap: false,
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(
+                                  0.0, 11.0, 0.0, 0.0),
+                              child:
+                                  // Adobe XD layer: 'Input' (group)
+                                  Stack(
+                                children: <Widget>[
+                                  // Adobe XD layer: 'Rectangle 107' (shape)
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xffffffff),
+                                      border: Border.all(
+                                          width: 1.0,
+                                          color: const Color(0xff014284)),
+                                    ),
+                                  ),
+                                  Pinned.fromPins(
+                                    Pin(size: 178.0, start: 16.0),
+                                    Pin(size: 14.0, middle: 0.5278),
+                                    child:
+                                        // Adobe XD layer: '497 Evergreen Rd. R…' (text)
+                                        const Text(
+                                      'Cantidad de personal de limpieza',
+                                      style: TextStyle(
+                                        fontFamily: 'Arial',
+                                        fontSize: 12,
+                                        color: Color(0xffbce0fd),
+                                      ),
+                                      softWrap: false,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                           ],
@@ -534,42 +558,27 @@ class SolicitudPredio2 extends StatelessWidget {
                     ],
                   ),
                 ),
+                const Align(
+                  alignment: Alignment(0.004, -1.0),
+                  child: SizedBox(
+                    width: 73.0,
+                    height: 30.0,
+                    child:
+                        // Adobe XD layer: 'Lorem ipsum dolor s…' (text)
+                        Text(
+                      'Paso 2/2 ',
+                      style: TextStyle(
+                        fontFamily: 'Arial',
+                        fontSize: 14,
+                        color: Color(0xff014284),
+                        height: 1.7142857142857142,
+                      ),
+                      textHeightBehavior:
+                          TextHeightBehavior(applyHeightToFirstAscent: false),
+                    ),
+                  ),
+                ),
               ],
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 96.0, middle: 0.5),
-            Pin(size: 32.0, start: 121.0),
-            child:
-                // Adobe XD layer: 'Lorem ipsum dolor s…' (text)
-                const Text(
-              'Segunda parte',
-              style: TextStyle(
-                fontFamily: 'Arial',
-                fontSize: 14,
-                color: Color(0xff2699fb),
-                height: 1.7142857142857142,
-              ),
-              textHeightBehavior:
-                  TextHeightBehavior(applyHeightToFirstAscent: false),
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(start: 92.0, end: 92.0),
-            Pin(size: 40.0, end: 87.0),
-            child:
-                // Adobe XD layer: 'Lorem ipsum dolor s…' (text)
-                const Text(
-              'Si ingresó todos sus datos, proceda a:',
-              style: TextStyle(
-                fontFamily: 'Arial',
-                fontSize: 14,
-                color: Color(0xff2699fb),
-                height: 1.7142857142857142,
-              ),
-              textHeightBehavior:
-                  TextHeightBehavior(applyHeightToFirstAscent: false),
-              textAlign: TextAlign.center,
             ),
           ),
         ],

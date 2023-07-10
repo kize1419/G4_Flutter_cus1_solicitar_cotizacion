@@ -1,8 +1,11 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import './menu.dart';
 import 'package:adobe_xd/page_link.dart';
 import './solicitud_predio1.dart';
+// ignore: depend_on_referenced_packages
 import 'package:flutter_svg/flutter_svg.dart';
 
 class DatosSolicitante extends StatelessWidget {
@@ -70,7 +73,7 @@ class DatosSolicitante extends StatelessWidget {
                     links: [
                       PageLinkInfo(
                         duration: 1,
-                        pageBuilder: () => Menu(),
+                        pageBuilder: () => const Menu(),
                       ),
                     ],
                     child: Stack(
@@ -97,7 +100,7 @@ class DatosSolicitante extends StatelessWidget {
               links: [
                 PageLinkInfo(
                   duration: 1,
-                  pageBuilder: () => SolicitudPredio1(),
+                  pageBuilder: () => const SolicitudPredio1(),
                 ),
               ],
               child: Stack(
@@ -176,7 +179,7 @@ class DatosSolicitante extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: const Color(0xffffffff),
                               border: Border.all(
-                                  width: 1.0, color: const Color(0xffbce0fd)),
+                                  width: 1.0, color: const Color(0xff014284)),
                             ),
                             margin:
                                 const EdgeInsets.fromLTRB(0.0, 17.0, 0.0, 0.0),
@@ -193,7 +196,7 @@ class DatosSolicitante extends StatelessWidget {
                                 style: TextStyle(
                                   fontFamily: 'Arial',
                                   fontSize: 10,
-                                  color: Color(0xff2699fb),
+                                  color: Color(0xff014284),
                                 ),
                                 softWrap: false,
                               ),
@@ -214,22 +217,22 @@ class DatosSolicitante extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: const Color(0xffffffff),
                               border: Border.all(
-                                  width: 1.0, color: const Color(0xffbce0fd)),
+                                  width: 1.0, color: const Color(0xff014284)),
                             ),
                             margin:
                                 const EdgeInsets.fromLTRB(0.0, 17.0, 0.0, 0.0),
                           ),
                           Pinned.fromPins(
-                            Pin(size: 119.0, start: 20.0),
-                            Pin(size: 16.0, middle: 0.6735),
+                            Pin(size: 102.0, start: 20.0),
+                            Pin(size: 14.0, middle: 0.6863),
                             child:
                                 // Adobe XD layer: 'johndoe@mail.com' (text)
                                 const Text(
                               'ejemplo@mail.com',
                               style: TextStyle(
                                 fontFamily: 'Arial',
-                                fontSize: 14,
-                                color: Color(0xff2699fb),
+                                fontSize: 12,
+                                color: Color(0xffbce0fd),
                               ),
                               softWrap: false,
                             ),
@@ -246,7 +249,7 @@ class DatosSolicitante extends StatelessWidget {
                                 style: TextStyle(
                                   fontFamily: 'Arial',
                                   fontSize: 10,
-                                  color: Color(0xff2699fb),
+                                  color: Color(0xff014284),
                                 ),
                                 softWrap: false,
                               ),
@@ -267,7 +270,7 @@ class DatosSolicitante extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: const Color(0xffffffff),
                               border: Border.all(
-                                  width: 1.0, color: const Color(0xffbce0fd)),
+                                  width: 1.0, color: const Color(0xff014284)),
                             ),
                             margin:
                                 const EdgeInsets.fromLTRB(0.0, 17.0, 0.0, 0.0),
@@ -284,7 +287,7 @@ class DatosSolicitante extends StatelessWidget {
                                 style: TextStyle(
                                   fontFamily: 'Arial',
                                   fontSize: 10,
-                                  color: Color(0xff2699fb),
+                                  color: Color(0xff014284),
                                 ),
                                 softWrap: false,
                               ),
@@ -305,7 +308,7 @@ class DatosSolicitante extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: const Color(0xffffffff),
                               border: Border.all(
-                                  width: 1.0, color: const Color(0xffbce0fd)),
+                                  width: 1.0, color: const Color(0xff014284)),
                             ),
                             margin:
                                 const EdgeInsets.fromLTRB(0.0, 17.0, 0.0, 0.0),
@@ -322,7 +325,7 @@ class DatosSolicitante extends StatelessWidget {
                                 style: TextStyle(
                                   fontFamily: 'Arial',
                                   fontSize: 10,
-                                  color: Color(0xff2699fb),
+                                  color: Color(0xff014284),
                                 ),
                                 softWrap: false,
                               ),
@@ -343,7 +346,7 @@ class DatosSolicitante extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: const Color(0xffffffff),
                               border: Border.all(
-                                  width: 1.0, color: const Color(0xffbce0fd)),
+                                  width: 1.0, color: const Color(0xff014284)),
                             ),
                             margin:
                                 const EdgeInsets.fromLTRB(0.0, 17.0, 0.0, 0.0),
@@ -360,7 +363,7 @@ class DatosSolicitante extends StatelessWidget {
                                 style: TextStyle(
                                   fontFamily: 'Arial',
                                   fontSize: 10,
-                                  color: Color(0xff2699fb),
+                                  color: Color(0xff014284),
                                 ),
                                 softWrap: false,
                               ),
@@ -381,7 +384,7 @@ class DatosSolicitante extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: const Color(0xffffffff),
                               border: Border.all(
-                                  width: 1.0, color: const Color(0xffbce0fd)),
+                                  width: 1.0, color: const Color(0xff014284)),
                             ),
                             margin:
                                 const EdgeInsets.fromLTRB(0.0, 17.0, 0.0, 0.0),
@@ -398,7 +401,7 @@ class DatosSolicitante extends StatelessWidget {
                                 style: TextStyle(
                                   fontFamily: 'Arial',
                                   fontSize: 10,
-                                  color: Color(0xff2699fb),
+                                  color: Color(0xff014284),
                                 ),
                                 softWrap: false,
                               ),
@@ -408,30 +411,30 @@ class DatosSolicitante extends StatelessWidget {
                       ),
                     ),
                     Pinned.fromPins(
-                      Pin(size: 78.0, start: 20.0),
-                      Pin(size: 16.0, middle: 0.2131),
+                      Pin(size: 67.0, start: 20.0),
+                      Pin(size: 14.0, middle: 0.216),
                       child:
                           // Adobe XD layer: 'Select an option' (text)
                           const Text(
                         'Escriba Aqui',
                         style: TextStyle(
                           fontFamily: 'Arial',
-                          fontSize: 14,
+                          fontSize: 12,
                           color: Color(0xffbce0fd),
                         ),
                         softWrap: false,
                       ),
                     ),
                     Pinned.fromPins(
-                      Pin(size: 78.0, start: 20.0),
-                      Pin(size: 16.0, middle: 0.5137),
+                      Pin(size: 67.0, start: 20.0),
+                      Pin(size: 14.0, middle: 0.5154),
                       child:
                           // Adobe XD layer: 'Select an option' (text)
                           const Text(
                         'Escriba Aqui',
                         style: TextStyle(
                           fontFamily: 'Arial',
-                          fontSize: 14,
+                          fontSize: 12,
                           color: Color(0xffbce0fd),
                         ),
                         softWrap: false,
@@ -440,13 +443,13 @@ class DatosSolicitante extends StatelessWidget {
                   ],
                 ),
                 Pinned.fromPins(
-                  Pin(size: 98.0, start: 0.0),
-                  Pin(start: 33.0, end: 17.0),
+                  Pin(size: 94.0, start: 0.0),
+                  Pin(start: 35.0, end: 17.0),
                   child: Stack(
                     children: <Widget>[
                       Pinned.fromPins(
-                        Pin(start: 0.0, end: 4.0),
-                        Pin(size: 11.0, middle: 0.5913),
+                        Pin(start: 0.0, end: 0.0),
+                        Pin(size: 11.0, middle: 0.5896),
                         child:
                             // Adobe XD layer: 'Confirm Password' (text)
                             const Text(
@@ -454,27 +457,28 @@ class DatosSolicitante extends StatelessWidget {
                           style: TextStyle(
                             fontFamily: 'Arial',
                             fontSize: 10,
-                            color: Color(0xff2699fb),
+                            color: Color(0xff014284),
                           ),
                           softWrap: false,
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(20.0, 0.0, 0.0, 0.0),
+                      Pinned.fromPins(
+                        Pin(size: 67.0, end: 7.0),
+                        Pin(start: 0.0, end: 0.0),
                         child:
                             // Adobe XD layer: 'Dropdown  - Empty' (group)
                             Stack(
                           children: <Widget>[
                             Pinned.fromPins(
                               Pin(start: 0.0, end: 0.0),
-                              Pin(size: 16.0, end: 0.0),
+                              Pin(size: 14.0, end: 0.0),
                               child:
                                   // Adobe XD layer: 'Select an option' (text)
                                   const Text(
                                 'Escriba Aqui',
                                 style: TextStyle(
                                   fontFamily: 'Arial',
-                                  fontSize: 14,
+                                  fontSize: 12,
                                   color: Color(0xffbce0fd),
                                 ),
                                 softWrap: false,
@@ -482,14 +486,14 @@ class DatosSolicitante extends StatelessWidget {
                             ),
                             Pinned.fromPins(
                               Pin(start: 0.0, end: 0.0),
-                              Pin(size: 16.0, start: 0.0),
+                              Pin(size: 14.0, start: 0.0),
                               child:
                                   // Adobe XD layer: 'Select an option' (text)
                                   const Text(
                                 'Escriba Aqui',
                                 style: TextStyle(
                                   fontFamily: 'Arial',
-                                  fontSize: 14,
+                                  fontSize: 12,
                                   color: Color(0xffbce0fd),
                                 ),
                                 softWrap: false,

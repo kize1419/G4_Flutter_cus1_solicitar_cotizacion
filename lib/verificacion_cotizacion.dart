@@ -1,13 +1,36 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import './menu.dart';
 import 'package:adobe_xd/page_link.dart';
+import './cotizacion.dart';
+// ignore: depend_on_referenced_packages
 import 'package:flutter_svg/flutter_svg.dart';
+//import 'API.dart';
+/*
+import 'dart:convert';
+import 'package:http/http.dart' as http;
 
+class SolicitudService {
+  Future<List<dynamic>> getSolicitud() async {
+    final response = await http.get(Uri.parse('http://http://127.0.0.1:5000/solicitud'));
+    if (response.statusCode == 200) {
+      final jsonResponse = jsonDecode(response.body);
+      return jsonResponse['solicitud']
+    } else {
+      throw Exception('Error al cargar las solicitudes');
+    }
+  }
+}
+*/
 class VerificacionCotizacion extends StatelessWidget {
   const VerificacionCotizacion({
     Key? key,
   }) : super(key: key);
+
+  //final TextEditingController _IngresoTextoControlador = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,50 +42,58 @@ class VerificacionCotizacion extends StatelessWidget {
             Pin(size: 68.0, start: 0.0),
             child:
                 // Adobe XD layer: 'Navigation Bar' (group)
-                Stack(
-              children: <Widget>[
-                // Adobe XD layer: 'Merged bar' (group)
-                Stack(
-                  children: <Widget>[
-                    Pinned.fromPins(
-                      Pin(start: 0.0, end: 0.0),
-                      Pin(size: 20.0, start: 0.0),
-                      child:
-                          // Adobe XD layer: 'Rectangle 68' (shape)
-                          SvgPicture.string(
-                        _svg_as0jc,
-                        allowDrawingOutsideViewBox: true,
-                        fit: BoxFit.fill,
-                      ),
-                    ),
-                    // Adobe XD layer: 'Rectangle 69' (shape)
-                    Container(
-                      color: const Color(0xff014284),
-                      margin: const EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 0.0),
-                    ),
-                  ],
-                ),
-                const Align(
-                  alignment: Alignment(0.006, 0.333),
-                  child: SizedBox(
-                    width: 94.0,
-                    height: 17.0,
-                    child:
-                        // Adobe XD layer: 'SIGN UP' (text)
-                        Text(
-                      'Mi cotización',
-                      style: TextStyle(
-                        fontFamily: 'Arial',
-                        fontSize: 15,
-                        color: Color(0xffffffff),
-                        fontWeight: FontWeight.w700,
-                      ),
-                      textAlign: TextAlign.center,
-                      softWrap: false,
-                    ),
-                  ),
+                PageLink(
+              links: [
+                PageLinkInfo(
+                  duration: 1,
+                  pageBuilder: () => const Menu(),
                 ),
               ],
+              child: Stack(
+                children: <Widget>[
+                  // Adobe XD layer: 'Merged bar' (group)
+                  Stack(
+                    children: <Widget>[
+                      Pinned.fromPins(
+                        Pin(start: 0.0, end: 0.0),
+                        Pin(size: 20.0, start: 0.0),
+                        child:
+                            // Adobe XD layer: 'Rectangle 68' (shape)
+                            SvgPicture.string(
+                          _svg_as0jc,
+                          allowDrawingOutsideViewBox: true,
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                      // Adobe XD layer: 'Rectangle 69' (shape)
+                      Container(
+                        color: const Color(0xff014284),
+                        margin: const EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 0.0),
+                      ),
+                    ],
+                  ),
+                  const Align(
+                    alignment: Alignment(0.006, 0.333),
+                    child: SizedBox(
+                      width: 94.0,
+                      height: 17.0,
+                      child:
+                          // Adobe XD layer: 'SIGN UP' (text)
+                          Text(
+                        'Mi cotización',
+                        style: TextStyle(
+                          fontFamily: 'Arial',
+                          fontSize: 15,
+                          color: Color(0xffffffff),
+                          fontWeight: FontWeight.w700,
+                        ),
+                        textAlign: TextAlign.center,
+                        softWrap: false,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
           Pinned.fromPins(
@@ -86,239 +117,263 @@ class VerificacionCotizacion extends StatelessWidget {
             ),
           ),
           Pinned.fromPins(
-            Pin(start: 52.0, end: 51.0),
-            Pin(size: 236.0, middle: 0.4971),
-            child: Stack(
-              children: <Widget>[
-                // Adobe XD layer: 'Input' (group)
-                Stack(
-                  children: <Widget>[
-                    Pinned.fromPins(
-                      Pin(start: 0.0, end: 0.0),
-                      Pin(size: 70.0, end: 0.0),
-                      child:
-                          // Adobe XD layer: 'Input' (group)
-                          Stack(
-                        children: <Widget>[
-                          // Adobe XD layer: 'Rectangle 122' (shape)
-                          Container(
-                            decoration: BoxDecoration(
-                              color: const Color(0xffffffff),
-                              border: Border.all(
-                                  width: 1.0, color: const Color(0xffbce0fd)),
-                            ),
-                            margin:
-                                const EdgeInsets.fromLTRB(0.0, 22.0, 0.0, 0.0),
-                          ),
-                          const Align(
-                            alignment: Alignment.topLeft,
-                            child: SizedBox(
-                              width: 254.0,
-                              height: 17.0,
-                              child:
-                                  // Adobe XD layer: 'Email' (text)
-                                  Text(
-                                'Número de documento de identidad',
-                                style: TextStyle(
-                                  fontFamily: 'Arial',
-                                  fontSize: 16,
-                                  color: Color(0xff2699fb),
-                                ),
-                                softWrap: false,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Pinned.fromPins(
-                      Pin(start: 0.0, end: 0.0),
-                      Pin(size: 70.0, start: 0.0),
-                      child:
-                          // Adobe XD layer: 'Input' (group)
-                          Stack(
-                        children: <Widget>[
-                          // Adobe XD layer: 'Rectangle 122' (shape)
-                          Container(
-                            decoration: BoxDecoration(
-                              color: const Color(0xffffffff),
-                              border: Border.all(
-                                  width: 1.0, color: const Color(0xffbce0fd)),
-                            ),
-                            margin:
-                                const EdgeInsets.fromLTRB(0.0, 22.0, 0.0, 0.0),
-                          ),
-                          const Align(
-                            alignment: Alignment.topLeft,
-                            child: SizedBox(
-                              width: 149.0,
-                              height: 17.0,
-                              child:
-                                  // Adobe XD layer: 'Full Name' (text)
-                                  Text(
-                                'Código de cotización',
-                                style: TextStyle(
-                                  fontFamily: 'Arial',
-                                  fontSize: 16,
-                                  color: Color(0xff2699fb),
-                                ),
-                                softWrap: false,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Pinned.fromPins(
-                      Pin(size: 78.0, start: 20.0),
-                      Pin(size: 16.0, middle: 0.1727),
-                      child:
-                          // Adobe XD layer: 'Dropdown  - Empty' (group)
-                          const Stack(
-                        children: <Widget>[
-                          SizedBox.expand(
-                              child:
-                                  // Adobe XD layer: 'Select an option' (text)
-                                  Text(
-                            'Escriba Aqui',
-                            style: TextStyle(
-                              fontFamily: 'Arial',
-                              fontSize: 14,
-                              color: Color(0xffbce0fd),
-                            ),
-                            softWrap: false,
-                          )),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-                Pinned.fromPins(
-                  Pin(size: 78.0, start: 15.0),
-                  Pin(size: 16.0, end: 16.0),
-                  child: const Stack(
-                    children: <Widget>[
-                      // Adobe XD layer: 'Dropdown  - Empty' (group)
-                      Stack(
-                        children: <Widget>[
-                          SizedBox.expand(
-                              child:
-                                  // Adobe XD layer: 'Select an option' (text)
-                                  Text(
-                            'Escriba Aqui',
-                            style: TextStyle(
-                              fontFamily: 'Arial',
-                              fontSize: 14,
-                              color: Color(0xffbce0fd),
-                            ),
-                            softWrap: false,
-                          )),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-                const Align(
-                  alignment: Alignment(0.399, 0.031),
-                  child: SizedBox(
-                    width: 94.0,
-                    height: 42.0,
-                    child:
-                        // Adobe XD layer: 'Lorem ipsum dolor s…' (text)
-                        Text(
-                      'o',
-                      style: TextStyle(
-                        fontFamily: 'Arial',
-                        fontSize: 30,
-                        color: Color(0xff2699fb),
-                        height: 0.8,
-                      ),
-                      textHeightBehavior:
-                          TextHeightBehavior(applyHeightToFirstAscent: false),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Pinned.fromPins(
             Pin(size: 25.0, start: 11.0),
             Pin(size: 21.0, start: 23.5),
             child:
                 // Adobe XD layer: 'Icon awesome-house-…' (shape)
-                PageLink(
-              links: [
-                PageLinkInfo(
-                  duration: 1,
-                  pageBuilder: () => const Menu(),
-                ),
-              ],
-              child: SvgPicture.string(
-                _svg_qhcy,
-                allowDrawingOutsideViewBox: true,
-                fit: BoxFit.fill,
-              ),
+                SvgPicture.string(
+              _svg_qhcy,
+              allowDrawingOutsideViewBox: true,
+              fit: BoxFit.fill,
             ),
           ),
           Pinned.fromPins(
-            Pin(start: 92.0, end: 92.0),
-            Pin(size: 137.0, start: 120.0),
-            child:
-                // Adobe XD layer: 'Lorem ipsum dolor s…' (text)
-                const Text(
-              'Ingrese el código de solicitud de cotización \no \nel número de su documento de identidad',
-              style: TextStyle(
-                fontFamily: 'Arial',
-                fontSize: 20,
-                color: Color(0xff2699fb),
-                height: 1.2,
-              ),
-              textHeightBehavior:
-                  TextHeightBehavior(applyHeightToFirstAscent: false),
-              textAlign: TextAlign.center,
-            ),
-          ),
-          Align(
-            alignment: const Alignment(0.0, 0.543),
-            child: SizedBox(
-              width: 96.0,
-              height: 40.0,
-              child:
-                  // Adobe XD layer: 'Ok' (group)
-                  Stack(
-                children: <Widget>[
-                  // Adobe XD layer: 'Rectangle 150' (shape)
-                  Container(
-                    decoration: BoxDecoration(
-                      color: const Color(0xff014284),
-                      borderRadius: BorderRadius.circular(4.0),
-                    ),
-                  ),
-                  const Align(
-                    alignment: Alignment(0.0, 0.034),
-                    child: SizedBox(
-                      width: 42.0,
-                      height: 11.0,
-                      child:
-                          // Adobe XD layer: 'OK' (text)
-                          Text(
-                        'BUSCAR',
-                        style: TextStyle(
-                          fontFamily: 'Arial',
-                          fontSize: 10,
-                          color: Color(0xffffffff),
-                          fontWeight: FontWeight.w700,
-                          height: 1.2,
+            Pin(start: 52.0, end: 51.0),
+            Pin(size: 608.0, start: 120.0),
+            child: Stack(
+              children: <Widget>[
+                Pinned.fromPins(
+                  Pin(start: 0.0, end: 0.0),
+                  Pin(size: 235.0, middle: 0.6086),
+                  child: Stack(
+                    children: <Widget>[
+                      // Adobe XD layer: 'Input' (group)
+                      Stack(
+                        children: <Widget>[
+                          Pinned.fromPins(
+                            Pin(start: 0.0, end: 0.0),
+                            Pin(size: 69.0, end: 0.0),
+                            child:
+                                // Adobe XD layer: 'Input' (group)
+                                Stack(
+                              children: <Widget>[
+                                // Adobe XD layer: 'Rectangle 122' (shape)
+                               Container(
+                                decoration: BoxDecoration(
+                                  color: const Color(0xffffffff),
+                                  border: Border.all(
+                                    width: 1.0,
+                                    color: const Color(0xff014284),
+                                  ),
+                                ),
+                                margin: const EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
+                                child: TextFormField(
+                                  decoration:const InputDecoration(
+                                    contentPadding:  EdgeInsets.fromLTRB(12.0, 16.0, 12.0, 16.0),
+                                    border: InputBorder.none,
+                                    filled: true,
+                                    fillColor:  Color(0xffffffff),
+                                  ),
+                                ),
+                              ),
+                                const Align(
+                                  alignment: Alignment.topLeft,
+                                  child: SizedBox(
+                                    width: 223.0,
+                                    height: 16.0,
+                                    child:
+                                        // Adobe XD layer: 'Email' (text)
+                                        Text(
+                                      'Número de documento de identidad',
+                                      style: TextStyle(
+                                        fontFamily: 'Arial',
+                                        fontSize: 14,
+                                        color: Color(0xff014284),
+                                      ),
+                                      softWrap: false,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Pinned.fromPins(
+                            Pin(start: 0.0, end: 0.0),
+                            Pin(size: 69.0, start: 0.0),
+                            child:
+                                // Adobe XD layer: 'Input' (group)
+                                Stack(
+                              children: <Widget>[
+                                // Adobe XD layer: 'Rectangle 122' (shape)
+                                Container(
+                                  decoration: BoxDecoration(
+                                    border: Border.all(width: 1.0, color: const Color(0xff014284)),
+                                    borderRadius: BorderRadius.circular(4.0),
+                                  ),
+                                  margin: const EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
+                                  child: TextFormField(
+                                    decoration: const InputDecoration(
+                                      contentPadding:  EdgeInsets.symmetric(vertical: 16.0, horizontal: 12.0),
+                                      border: InputBorder.none,
+                                      filled: true,
+                                      fillColor:  Color(0xffffffff),
+                                    ),
+                                  ),
+                                ),
+
+                                const Align(
+                                  alignment: Alignment.topLeft,
+                                  child: SizedBox(
+                                    width: 130.0,
+                                    height: 16.0,
+                                    child:
+                                        // Adobe XD layer: 'Full Name' (text)
+                                        Text(
+                                      'Código de cotización',
+                                      style: TextStyle(
+                                        fontFamily: 'Arial',
+                                        fontSize: 14,
+                                        color: Color(0xff014284),
+                                      ),
+                                      softWrap: false,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Pinned.fromPins(
+                            Pin(size: 67.0, start: 20.0),
+                            Pin(size: 14.0, middle: 0.1765),
+                            child:
+                                // Adobe XD layer: 'Dropdown  - Empty' (group)
+                                const Stack(
+                              children: <Widget>[
+                                SizedBox.expand(
+                                    child:
+                                        // Adobe XD layer: 'Select an option' (text)
+                                        Text(
+                                  'Escriba Aqui',
+                                  style: TextStyle(
+                                    fontFamily: 'Arial',
+                                    fontSize: 12,
+                                    color: Color(0xffbce0fd),
+                                  ),
+                                  softWrap: false,
+                                )),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                      Pinned.fromPins(
+                        Pin(size: 67.0, start: 15.0),
+                        Pin(size: 14.0, end: 16.0),
+                        child: const Stack(
+                          children: <Widget>[
+                            // Adobe XD layer: 'Dropdown  - Empty' (group)
+                            Stack(
+                              children: <Widget>[
+                                SizedBox.expand(
+                                    child:
+                                        // Adobe XD layer: 'Select an option' (text)
+                                        Text(
+                                  'Escriba Aqui',
+                                  style: TextStyle(
+                                    fontFamily: 'Arial',
+                                    fontSize: 12,
+                                    color: Color(0xffbce0fd),
+                                  ),
+                                  softWrap: false,
+                                )),
+                              ],
+                            ),
+                          ],
                         ),
-                        textHeightBehavior:
-                            TextHeightBehavior(applyHeightToFirstAscent: false),
-                        textAlign: TextAlign.center,
-                        softWrap: false,
+                      ),
+                      const Align(
+                        alignment: Alignment(0.399, 0.026),
+                        child: SizedBox(
+                          width: 94.0,
+                          height: 42.0,
+                          child:
+                              // Adobe XD layer: 'Lorem ipsum dolor s…' (text)
+                              Text(
+                            'o',
+                            style: TextStyle(
+                              fontFamily: 'Arial',
+                              fontSize: 30,
+                              color: Color(0xff014284),
+                              height: 0.8,
+                            ),
+                            textHeightBehavior: TextHeightBehavior(
+                                applyHeightToFirstAscent: false),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Pinned.fromPins(
+                  Pin(start: 40.0, end: 41.0),
+                  Pin(size: 137.0, start: 0.0),
+                  child:
+                      // Adobe XD layer: 'Lorem ipsum dolor s…' (text)
+                      const Text(
+                    'Ingrese el código de solicitud de cotización \no \nel número de su documento de identidad',
+                    style: TextStyle(
+                      fontFamily: 'Arial',
+                      fontSize: 14,
+                      color: Color(0xff014284),
+                      height: 1.7142857142857142,
+                    ),
+                    textHeightBehavior:
+                        TextHeightBehavior(applyHeightToFirstAscent: false),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+                Align(
+                  alignment: const Alignment(-0.004, 1.0),
+                  child: SizedBox(
+                    width: 96.0,
+                    height: 40.0,
+                    child:
+                        // Adobe XD layer: 'Ok' (group)
+                        PageLink(
+                      links: [
+                        PageLinkInfo(
+                          duration: 1,
+                          pageBuilder: () => const Cotizacion(),
+                        ),
+                      ],
+                      child: Stack(
+                        children: <Widget>[
+                          // Adobe XD layer: 'Rectangle 150' (shape)
+                          Container(
+                            decoration: BoxDecoration(
+                              color: const Color(0xff014284),
+                              borderRadius: BorderRadius.circular(4.0),
+                            ),
+                          ),
+                          const Align(
+                            alignment: Alignment(0.0, 0.034),
+                            child: SizedBox(
+                              width: 42.0,
+                              height: 11.0,
+                              child:
+                                  // Adobe XD layer: 'OK' (text)
+                                  Text(
+                                'BUSCAR',
+                                style: TextStyle(
+                                  fontFamily: 'Arial',
+                                  fontSize: 10,
+                                  color: Color(0xffffffff),
+                                  fontWeight: FontWeight.w700,
+                                  height: 1.2,
+                                ),
+                                textHeightBehavior: TextHeightBehavior(
+                                    applyHeightToFirstAscent: false),
+                                textAlign: TextAlign.center,
+                                softWrap: false,
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
         ],

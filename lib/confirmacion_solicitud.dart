@@ -1,6 +1,9 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:flutter/material.dart';
 import './codigo_solicitud.dart';
 import 'package:adobe_xd/page_link.dart';
+// ignore: depend_on_referenced_packages
 import 'package:flutter_svg/flutter_svg.dart';
 
 class ConfirmacionSolicitud extends StatelessWidget {
@@ -48,7 +51,7 @@ class ConfirmacionSolicitud extends StatelessWidget {
                         style: TextStyle(
                           fontFamily: 'Arial',
                           fontSize: 15,
-                          color: Color(0xff2699fb),
+                          color: Color(0xff014284),
                           height: 1.6,
                         ),
                         textHeightBehavior:
@@ -86,7 +89,7 @@ class ConfirmacionSolicitud extends StatelessWidget {
                 links: [
                   PageLinkInfo(
                     duration: 1,
-                    pageBuilder: () => CodigoSolicitud(),
+                    pageBuilder: () => const CodigoSolicitud(),
                   ),
                 ],
                 child: Stack(

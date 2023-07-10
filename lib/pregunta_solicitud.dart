@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import './confirmacion_solicitud.dart';
 import 'package:adobe_xd/page_link.dart';
+import './solicitud_predio2.dart';
 
 class PreguntaSolicitud extends StatelessWidget {
   const PreguntaSolicitud({
@@ -35,21 +36,24 @@ class PreguntaSolicitud extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Pinned.fromPins(
-                    Pin(start: 44.0, end: 43.0),
-                    Pin(size: 68.0, middle: 0.3889),
-                    child:
-                        // Adobe XD layer: 'Software Update Fai…' (text)
-                        const Text(
-                      '¿Confirma que desea \nrealizar su solicitud?\n',
-                      style: TextStyle(
-                        fontFamily: 'Arial',
-                        fontSize: 20,
-                        color: Color(0xff2699fb),
-                        fontWeight: FontWeight.w700,
+                  const Align(
+                    alignment: Alignment(0.008, -0.252),
+                    child: SizedBox(
+                      width: 168.0,
+                      height: 53.0,
+                      child:
+                          // Adobe XD layer: 'Software Update Fai…' (text)
+                          Text(
+                        '¿Confirma que desea \nrealizar su solicitud?\n',
+                        style: TextStyle(
+                          fontFamily: 'Arial',
+                          fontSize: 16,
+                          color: Color(0xff014284),
+                          fontWeight: FontWeight.w700,
+                        ),
+                        textAlign: TextAlign.center,
+                        softWrap: false,
                       ),
-                      textAlign: TextAlign.center,
-                      softWrap: false,
                     ),
                   ),
                   Pinned.fromPins(
@@ -97,7 +101,7 @@ class PreguntaSolicitud extends StatelessWidget {
                                 style: TextStyle(
                                   fontFamily: 'Arial',
                                   fontSize: 14,
-                                  color: Color(0xff2699fb),
+                                  color: Color(0xff014284),
                                   fontWeight: FontWeight.w700,
                                 ),
                                 textAlign: TextAlign.center,
@@ -111,16 +115,24 @@ class PreguntaSolicitud extends StatelessWidget {
                           Pin(size: 16.0, middle: 0.525),
                           child:
                               // Adobe XD layer: 'Settings' (text)
-                              const Text(
-                            'Cancelar',
-                            style: TextStyle(
-                              fontFamily: 'Arial',
-                              fontSize: 14,
-                              color: Color(0xff2699fb),
-                              fontWeight: FontWeight.w700,
+                              PageLink(
+                            links: [
+                              PageLinkInfo(
+                                duration: 1,
+                                pageBuilder: () => const SolicitudPredio2(),
+                              ),
+                            ],
+                            child: const Text(
+                              'Cancelar',
+                              style: TextStyle(
+                                fontFamily: 'Arial',
+                                fontSize: 14,
+                                color: Color(0xff014284),
+                                fontWeight: FontWeight.w700,
+                              ),
+                              textAlign: TextAlign.center,
+                              softWrap: false,
                             ),
-                            textAlign: TextAlign.center,
-                            softWrap: false,
                           ),
                         ),
                       ],

@@ -43,7 +43,7 @@ class CodigoSolicitud extends StatelessWidget {
                     style: TextStyle(
                       fontFamily: 'Arial',
                       fontSize: 14,
-                      color: Color(0xff2699fb),
+                      color: Color(0xff014284),
                       fontWeight: FontWeight.w700,
                       height: 1.7142857142857142,
                     ),
@@ -64,7 +64,7 @@ class CodigoSolicitud extends StatelessWidget {
                       style: TextStyle(
                         fontFamily: 'Arial',
                         fontSize: 20,
-                        color: Color(0xff2699fb),
+                        color: Color(0xff014284),
                         height: 1.2,
                       ),
                       textHeightBehavior:
@@ -81,7 +81,7 @@ class CodigoSolicitud extends StatelessWidget {
                     links: [
                       PageLinkInfo(
                         duration: 1,
-                        pageBuilder: () => VerificacionCotizacion(),
+                        pageBuilder: () => const VerificacionCotizacion(),
                       ),
                     ],
                     child: const Text(
@@ -89,7 +89,7 @@ class CodigoSolicitud extends StatelessWidget {
                       style: TextStyle(
                         fontFamily: 'Arial',
                         fontSize: 14,
-                        color: Color(0xff2699fb),
+                        color: Color(0xff014284),
                         fontWeight: FontWeight.w700,
                       ),
                       textAlign: TextAlign.center,
@@ -107,7 +107,7 @@ class CodigoSolicitud extends StatelessWidget {
                     style: TextStyle(
                       fontFamily: 'Arial',
                       fontSize: 14,
-                      color: Color(0xff2699fb),
+                      color: Color(0xff014284),
                       height: 1.7142857142857142,
                     ),
                     textHeightBehavior:
